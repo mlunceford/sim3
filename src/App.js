@@ -1,25 +1,24 @@
 import React from 'react';
-import logo from './logo.svg';
+import './reset.css';
 import './App.css';
+import {HashRouter} from 'react-router-dom'
+import Dashboard from './Components/Dashboard';
+import Form from './Components/Form';
+import Auth from './Components/Auth';
+import Nav from './Components/Nav';
+import routes from './routes';
 
+//todo on nav i need to hide it on auth but everything else display it.
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+      <HashRouter>
+        <div className="App">
+            <Nav/>
+            {routes} 
+
+        </div>
+
+      </HashRouter>
   );
 }
 
