@@ -30,8 +30,8 @@ class Auth extends React.Component {
                         name='password'
                         onChange={(e) => this.handleInput(e)}/></p>
                     <div className="btnBox">
-                        <button className='btn'>Log In</button>
-                        <button className='btn'>Register</button>
+                        <button className='btn authbtn'>Log In</button>
+                        <button className='btn authbtn'>Register</button>
                     </div>
                 </div>
             </div>

@@ -8,7 +8,7 @@ import Auth from './Components/Auth';
 import Nav from './Components/Nav';
 import routes from './routes';
 
-//todo on nav i need to hide it on auth but everything else display it.
+
 function App() {
   return (
       <HashRouter>
